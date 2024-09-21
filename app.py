@@ -33,7 +33,7 @@ def predict_datapoint():
         pred_df = data.get_data_as_data_frame()
         print(pred_df)
 
-        pred_df.columns = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course', 'reading score', 'writing score']
+        #pred_df.columns = ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course', 'reading score', 'writing score']
 
         predict_pipeline= PredictPipeline()
         results = predict_pipeline.predict(pred_df)
